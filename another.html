@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Edge - AI-Powered Athlete Management System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(120deg, #4F46E5, #2563EB);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #4F46E5;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-indigo-600">Athlete<span class="text-blue-500">Edge</span></span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#dashboard"
+                    class="nav-link text-gray-700 hover:text-indigo-600 transition duration-300">Dashboard</a>
+                <a href="#performance"
+                    class="nav-link text-gray-700 hover:text-indigo-600 transition duration-300">Performance</a>
+                <a href="#analytics"
+                    class="nav-link text-gray-700 hover:text-indigo-600 transition duration-300">Analytics</a>
+                <a href="#career"
+                    class="nav-link text-gray-700 hover:text-indigo-600 transition duration-300">Career</a>
+                <a href="#financial"
+                    class="nav-link text-gray-700 hover:text-indigo-600 transition duration-300">Financial</a>
+                <a href="#community"
+                    class="nav-link text-gray-700 hover:text-indigo-600 transition duration-300">Community</a>
+                <button
+                    class="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition duration-300">Log
+                    In</button>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content sections will go here -->
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 gradient-bg">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">Transform Your Athletic Journey
+                        with AI-Powered Insights</h1>
+                    <p class="text-blue-100 text-lg my-6">The complete athlete management system designed for Indian
+                        athletes - track performance, manage health, plan your career, and make data-driven decisions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button
+                            class="bg-white text-indigo-600 px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 font-medium">Get
+                            Started</button>
+                        <button
+                            class="border-2 border-white text-white px-8 py-3 rounded-md hover:bg-white hover:text-indigo-600 transition duration-300 font-medium">Learn
+                            More</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/api/placeholder/600/400" alt="Athlete Dashboard" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Performance & Health Monitoring Section -->
+    <section id="performance" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">Performance & Health Monitoring</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Track your vitals in real-time and receive AI-driven
+                    insights to optimize your training and prevent injuries.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <img src="/api/placeholder/500/400" alt="Performance Monitoring" class="rounded-lg shadow-lg">
+                </div>
+                <div class="lg:w-1/2 lg:pl-12">
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-running text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Real-time Data Tracking</h3>
+                        </div>
+                        <p class="text-gray-600 pl-16">Connect your wearables and track heart rate, speed, distance,
+                            sleep quality, and more in real-time.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-film text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">AI Motion Analysis</h3>
+                        </div>
+                        <p class="text-gray-600 pl-16">Upload videos of your technique and receive AI-powered analysis
+                            with personalized improvement suggestions.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-dumbbell text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Personalized Plans</h3>
+                        </div>
+                        <p class="text-gray-600 pl-16">Get AI-generated workout and recovery plans tailored to your
+                            body, goals, and schedule.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-medkit text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Injury Prevention</h3>
+                        </div>
+                        <p class="text-gray-600 pl-16">Receive alerts when your training patterns indicate potential
+                            injury risks, with AI rehabilitation suggestions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Dashboard Preview -->
+            <div class="mt-16 bg-gray-100 p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8">Performance Dashboard</h3>
+                <div class="flex justify-center">
+                    <img src="/api/placeholder/800/400" alt="Performance Dashboard" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                    <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Performance Trend Analysis</h3>
+            </div>
+            <p class="text-gray-600 mb-6">Visual representation of your performance trends over time to track progress
+                and identify areas for improvement.</p>
+        </div>
+        <div class="bg-blue-50 p-6">
+            <img src="/api/placeholder/400/200" alt="Performance Trends" class="rounded-lg w-full">
+        </div>
+    </div>
+    </div>
+
+    <!-- Analytics Dashboard Preview -->
+    <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 md:mb-0">Your Performance Analytics Dashboard</h3>
+            <div class="flex space-x-4">
+                <button
+                    class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">Last 7
+                    Days</button>
+                <button
+                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition duration-300">Last
+                    Month</button>
+                <button
+                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition duration-300">Last
+                    Year</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="text-lg font-medium text-gray-700 mb-4">Training Load vs Recovery</h4>
+                <img src="/api/placeholder/500/300" alt="Training Load Chart" class="rounded-lg w-full">
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="text-lg font-medium text-gray-700 mb-4">Performance Metrics</h4>
+                <img src="/api/placeholder/500/300" alt="Performance Metrics" class="rounded-lg w-full">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="text-lg font-medium text-gray-700 mb-4">Heart Rate Zones</h4>
+                <img src="/api/placeholder/300/200" alt="Heart Rate Zones" class="rounded-lg w-full">
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="text-lg font-medium text-gray-700 mb-4">Sleep Quality</h4>
+                <img src="/api/placeholder/300/200" alt="Sleep Quality" class="rounded-lg w-full">
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="text-lg font-medium text-gray-700 mb-4">Recovery Score</h4>
+                <img src="/api/placeholder/300/200" alt="Recovery Score" class="rounded-lg w-full">
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+
+    <!-- Career Management Section -->
+    <section id="career" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">Career Management</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Take control of your athletic career with AI-powered
+                    tools designed to help you reach your professional goals.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0 order-2 lg:order-1">
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-chart-bar text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">AI-Based Career Recommendations</h3>
+                        </div>
+                        <p class="text-gray-600 pl-16">Receive personalized career path suggestions based on your
+                            performance data, skills, and goals.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-file-alt text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Portfolio & Resume Builder</h3>
+                        </div>
+                        <p class="text-gray-600 pl-16">Automatically generate professional resumes and portfolios
+                            showcasing your achievements and statistics.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-trophy text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Achievement Tracking</h3>
+                        </div>
+                        <p class="text-gray-600 pl-16">Keep a comprehensive record of your milestones, awards, and
+                            accomplishments throughout your career.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-handshake text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Opportunity Matching</h3>
+                        </div>
+                        <p class="text-gray-600 pl-16">Get matched with sponsorships, teams, and career opportunities
+                            based on your profile and performance data.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <img src="/api/placeholder/500/400" alt="Career Management" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Career Dashboard Preview -->
+            <div class="mt-16 bg-gray-100 p-8 rounded-xl shadow-lg">
+                <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 md:mb-0">Career Dashboard</h3>
+                    <button
+                        class="px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition duration-300">
+                        <i class="fas fa-download mr-2"></i> Export Portfolio
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-medium text-gray-700 mb-4">Career Progression</h4>
+                        <img src="/api/placeholder/500/300" alt="Career Progression" class="rounded-lg w-full">
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-medium text-gray-700 mb-4">Performance Highlights</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="bg-purple-100 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-medal text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">National Championship</h5>
+                                    <p class="text-sm text-gray-600">1st Place - 100m Sprint</p>
+                                </div>
+                                <div class="ml-auto text-gray-500 text-sm">Feb 2025</div>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="bg-purple-100 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-chart-line text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Personal Best</h5>
+                                    <p class="text-sm text-gray-600">100m Sprint - 10.5 seconds</p>
+                                </div>
+                                <div class="ml-auto text-gray-500 text-sm">Jan 2025</div>
+                            </div>
+                            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                <div class="bg-purple-100 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-trophy text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium">Regional Tournament</h5>
+                                    <p class="text-sm text-gray-600">2nd Place - 200m Sprint</p>
+                                </div>
+                                <div class="ml-auto text-gray-500 text-sm">Dec 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <h4 class="text-lg font-medium text-gray-700">Financial Goals</h4>
+    <button class="text-green-500 hover:text-green-600 text-sm font-medium">
+        <i class="fas fa-plus mr-1"></i> Add Goal
+    </button>
+    </div>
+    <div class="space-y-4">
+        <div class="bg-white p-3 rounded-lg shadow-sm">
+            <div class="flex justify-between items-center mb-2">
+                <h5 class="font-medium">Emergency Fund</h5>
+                <span class="text-sm text-green-600">75% Complete</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-green-600 h-2.5 rounded-full" style="width: 75%"></div>
+            </div>
+            <div class="flex justify-between text-xs text-gray-500 mt-1">
+                <span>₹3,75,000</span>
+                <span>₹5,00,000</span>
+            </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow-sm">
+            <div class="flex justify-between items-center mb-2">
+                <h5 class="font-medium">Post-Career Education</h5>
+                <span class="text-sm text-green-600">40% Complete</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-green-600 h-2.5 rounded-full" style="width: 40%"></div>
+            </div>
+            <div class="flex justify-between text-xs text-gray-500 mt-1">
+                <span>₹8,00,000</span>
+                <span>₹20,00,000</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Financial Action Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        <div class="bg-white p-6 rounded-xl shadow-lg transition-transform hover:transform hover:scale-105">
+            <div class="flex items-center mb-4">
+                <div class="bg-green-100 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                    <i class="fas fa-file-invoice-dollar text-green-600"></i>
+                </div>
+                <h4 class="text-lg font-semibold">Tax Planning</h4>
+            </div>
+            <p class="text-gray-600 mb-4">Optimize your tax strategy with AI-based recommendations tailored for
+                athletes.</p>
+            <a href="#" class="text-green-600 hover:text-green-700 font-medium flex items-center">
+                Learn More <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg transition-transform hover:transform hover:scale-105">
+            <div class="flex items-center mb-4">
+                <div class="bg-green-100 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                    <i class="fas fa-chart-pie text-green-600"></i>
+                </div>
+                <h4 class="text-lg font-semibold">Investment Portfolio</h4>
+            </div>
+            <p class="text-gray-600 mb-4">Build a diversified investment portfolio with guidance from our AI financial
+                advisors.</p>
+            <a href="#" class="text-green-600 hover:text-green-700 font-medium flex items-center">
+                Learn More <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg transition-transform hover:transform hover:scale-105">
+            <div class="flex items-center mb-4">
+                <div class="bg-green-100 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                    <i class="fas fa-shield-alt text-green-600"></i>
+                </div>
+                <h4 class="text-lg font-semibold">Insurance Coverage</h4>
+            </div>
+            <p class="text-gray-600 mb-4">Get recommendations for health, disability, and liability insurance tailored
+                for athletes.</p>
+            <a href="#" class="text-green-600 hover:text-green-700 font-medium flex items-center">
+                Learn More <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Athlete Edge</h3>
+                    <p class="text-gray-400">The complete AI-powered athlete management system designed for Indian
+                        athletes.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Features</h3>
+                    <ul class="text-gray-400">
+                        <li class="mb-2"><a href="#" class="hover:text-white transition duration-300">Performance
+                                Tracking</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition duration-300">Health
+                                Monitoring</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition duration-300">Career
+                                Management</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition duration-300">Financial
+                                Planning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="text-gray-400">
+                        <li class="mb-2"><a href="#" class="hover:text-white transition duration-300">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition duration-300">Support</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition duration-300">Documentation</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="text-gray-400">
+                        <li class="mb-2"><i class="fas fa-envelope mr-2"></i> contact@athleteedge.in</li>
+                        <li class="mb-2"><i class="fas fa-phone mr-2"></i> +91 9876543210</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Delhi, India</li>
+                    </ul>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2025 Athlete Edge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
